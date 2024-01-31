@@ -1,0 +1,415 @@
+.myAccount__wrapper{
+    width: 100%;
+    height: 100%;
+}
+.myAccount__inner{
+    display: flex;
+}
+
+.myAccount__left{
+    overflow-x: hidden;
+    scrollbar-width : 0px;
+    width: 20.4%;
+    height: 100vh;
+    
+}
+
+.myAccount__left::-webkit-scrollbar {width:0px;}
+.myAccount__right{
+    width: 79.6%;
+    border-left:2px solid #5B85AA ;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+
+.navigation{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#novigation__ul{
+    list-style: none;
+    width: 208px;
+}
+
+#novigation__ul > li{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    width: 100%;
+    padding-left: 8px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    border-radius: 6px;
+    background: #5B85AA; 
+    margin-bottom: 22px;
+}
+
+#novigation__ul > li > a{
+    color: #000;
+    text-decoration: none;
+}
+.user{
+    min-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 0 auto;
+    /* margin-left: 1%; */
+    bottom:0;
+    position: absolute;
+}
+*{
+    scrollbar-width: 0;
+    margin: 0;
+    padding: 0;
+}
+@font-face {
+	font-family: 'Akada Kanadaka'; 
+	src: url(../../fonts/AkayaKanadaka-Regular.ttf); 
+}
+@font-face {
+	font-family: 'Montserrat'; 
+	src: url(../../fonts/Montserrat-VariableFont_wght.ttf); 
+}
+@font-face {
+	font-family: 'Roboto'; 
+	src: url(../../fonts/Roboto-Regular.ttf); 
+}
+@font-face {
+	font-family: 'RobotoLightItalic'; 
+	src: url(../../fonts/Roboto-LightItalic.ttf); 
+}
+@font-face {
+	font-family: 'RobotoBold'; 
+	src: url(../../fonts/Roboto-Bold.ttf); 
+}
+@font-face {
+	font-family: 'Inter'; 
+	src: url(../../fonts/Inter-VariableFont_slnt\,wght.ttf); 
+}
+html{
+    max-width: 100%;
+}
+body{
+    /* height: 720px;
+    width: 1080px; */
+    height: 100vh;
+    width: 100vw;
+    /* max-width: 100%; */
+    overflow-x: hidden;
+    background-color: #F4F7F7;
+}
+#main{
+    width: 100vw;
+    height: 100vh;
+    margin: 0 1vw;
+    display: flex;
+}
+.main_burger{
+    width: 10%;
+    height: 100vh;
+    border-right: 0.2vw solid #5B85AA;
+    padding-right: 1vw;
+    padding-top: 1vh;
+}
+.main_logo{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    font-family: "Akada Kanadaka";
+    font-weight: 400;
+    width: 60%;
+    white-space: nowrap;
+}
+.main_logo img{
+    width: 40%;
+}
+.main_burger_link{
+    display: flex;
+    padding: 1vh;
+    font-family: 'Montserrat';
+    font-weight: 500;
+    vertical-align: middle;
+    white-space: nowrap;
+    text-decoration: none;
+    color: #000;
+}
+.main_burger_link img{
+    margin-right: 5%;
+}
+.main_burger_link svg{
+    color: #000;
+}
+.main_burger_link-active{
+    background-color: #5B85AA;
+    color: white;
+    border-radius: 6px;
+}
+.main_burger_user{
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    padding-left: 1vw;
+    padding-bottom: 1vh;
+    width: 8vw;
+    background-color: #fff;
+}
+
+.main_burger_user img{
+    background-color: #FFBF00;
+    border-radius: 50%;
+    width: 20%;
+    height: 20%;
+    margin-right: 5%;
+}
+.main_burger_user_name_username{
+    display: flex;
+    font-style: italic;
+    font-weight: 100;
+    font-family: 'RobotoLightItalic';
+}
+.main_burger_user_name_privilege{
+    display: flex;
+    font-weight: 500;
+    font-family: 'RobotoBold';
+}
+.finance{
+    width: 70%;
+    height: 80%;
+    margin-left: 10%;
+}
+.finance_top{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 3%;
+}
+.finance_top_button{
+    font-family: 'Inter';
+    width: 20%;
+    background-color: #D9D9D9;
+    text-align: center;
+    border-radius: 30px;
+    padding: 1%;
+}
+.finance_top_button_active{
+    background-color: #CA9700;
+}
+.finance_body_left{
+    width: 55%;
+}
+.finance_body_left_card{
+    /* border: 1px solid black; */
+    background-color: #d9d9d9;
+    margin: 2% 0;
+    padding: 3%;
+    width: 100%;
+    box-shadow: 0 calc(100vw/250) calc(100vw/300) 0px rgba(112, 122, 129, 0.605);
+    font-family: 'Inter';
+    margin: 4% 0;
+}
+.finance_body_left_card div{
+    margin: 1.5% 0;
+}
+.finance_body_left_card_is_paid_button{
+    width: 15%;
+    height: 10%;
+    padding: 1.5% 2%;
+    margin-left: 80%;
+    background-color: #F11919;
+    border-radius: 10px;
+    font-family: 'Inter';
+    font-weight: bold;
+}
+.finance_body_left_card_paid_button{
+    background-color: #35BE29;
+}
+.finance_body{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    height: 100%;
+    
+}
+footer{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    vertical-align: middle;
+    /* margin-top: 2%; */
+    width: 87.89%;
+    padding: .5% 0;
+    font-family: 'Montserrat';
+    background-color: lightgray;
+}
+.finance_body_right{
+    width: 35%;
+    font-family: 'Inter';
+    height: 100%;
+    padding-top: 2%;
+}
+.finance_body_right_check_title{
+    text-align: center;
+    margin-bottom: 10%;
+}
+.finance_body_right_check{
+    height: 100%;
+}
+.finance_body_right_check_body{
+    background-color: #D9D9D9;
+    border-radius: 5px;
+}
+.finance_body_right_check_body{
+    padding: 3%;
+    height: 80%;
+}
+.finance_body_right_check_body_element{
+    display: flex;
+    justify-content: space-between;
+    margin: 5% 0;
+}
+.finance_body_right_check_body_element_left{
+    color: gray;
+}
+.finance_body_right_check_body_element_right{
+    text-align: end;
+}
+.w-0{
+    display: none;
+}
+.w-100{
+    width: 100%;
+}
+
+
+
+
+
+
+
+@media (min-width:480px) {
+    .main_logo img{
+        width: 60%;
+    }
+    .main_burger_link img{
+        width: 15%;
+    }
+    .finance_body_right_check_body_element_left{
+        font-size: 8px;
+    }
+    .finance_body_right_check_body_element_right{
+        font-size: 8px;
+    }
+    .finance_body_right_check_title{
+        font-size: 16px;
+    }
+    .main_burger_user_name_username{
+        font-size: 8px;
+    }
+    .main_logo_text{
+        font-size: 14px;
+    }
+    .main_burger_list_elements_text{
+        font-size: 7px;
+    }
+    .finance_body_left_card_element{
+        font-size: 9px;
+    }
+    .finance_body_left_card_is_paid_button{
+        font-size: 7px;
+    }
+    .main_burger_user_name_privilege{
+        font-size: 6px;
+    }
+    .finance_top_button{
+        font-size: 7px;
+    }
+}
+@media (min-width:1080px) {
+    .main_logo img{
+        width: 60%;
+    }
+    .main_burger_link img{
+        width: 13%;
+    }
+    .finance_body_right_check_body_element_left{
+        font-size: 14px;
+    }
+    .finance_body_right_check_body_element_right{
+        font-size: 14px;
+    }
+    .finance_body_right_check_title{
+        font-size: 17px;
+    }
+    .main_burger_user_name_username{
+        font-size: 12px;
+    }
+    .main_logo_text{
+        font-size: 18px;
+    }
+    .main_burger_list_elements_text{
+        font-size: 10px;
+    }
+    .finance_body_left_card_element{
+        font-size: 14px;
+    }
+    .finance_body_left_card_is_paid_button{
+        font-size: 12px;
+    }
+    .main_burger_user_name_privilege{
+        font-size: 10px;
+    }
+    .finance_top_button{
+        font-size: 14px;
+    }
+}
+@media (min-width:1920px) {
+    .main_logo img{
+        width: 60%;
+    }
+    .main_burger_link img{
+        width: 15%;
+    }
+    .finance_body_right_check_body_element_left{
+        font-size: 18px;
+    }
+    .finance_body_right_check_body_element_right{
+        font-size: 18px;
+    }
+    .finance_body_right_check_title{
+        font-size: 26px;
+    }
+    .main_burger_user_name_username{
+        font-size: 18px;
+    }
+    .main_logo_text{
+        font-size: 24px;
+    }
+    .main_burger_list_elements_text{
+        font-size: 16px;
+    }
+    .finance_body_left_card_element{
+        font-size: 18px;
+    }
+    .finance_body_left_card_is_paid_button{
+        font-size: 18px;
+    }
+    .main_burger_user_name_privilege{
+        font-size: 16px;
+    }
+    .finance_top_button{
+        font-size: 1px;
+    }
+}
